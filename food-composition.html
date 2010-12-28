@@ -866,7 +866,7 @@ function isInBlackList( key )
       return;
     }
     total_cal += energy;
-    var line = f["ALIMENTI"]+"\t"+energy+"kcal\n\r";
+    var line = qty + "grammi\t" + f["ALIMENTI"]+"\t"+energy+"kcal\n\r";
     menu.push( line );
     update_output();
     });

@@ -820,7 +820,7 @@ function search( key )
        return( food[i] );
     }
   }
-  alert("mmm... non doveva succedere!\nNon ho trovato \"" + key + "\"");
+  alert("Alimento non ho trovato \"" + key + "\"");
 }
 
 function update_output()
@@ -862,7 +862,7 @@ function isInBlackList( key )
     var qty = $("#qty").val();
     var energy = (f["Energia"]*qty)/100;
     if ( energy < 0 ) {
-      alert("Errore: calorie negative!");
+      alert("Dato non disponibile");
       return;
     }
     total_cal += energy;

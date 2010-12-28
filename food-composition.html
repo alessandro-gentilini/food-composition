@@ -862,7 +862,7 @@ function isInBlackList( key )
     var qty = $("#qty").val();
     var energy = (f["Energia"]*qty)/100;
     if ( energy < 0 ) {
-      alert("Dato non disponibile");
+      alert("Dato non disponibile per l'alimento\n\"" + f["ALIMENTI"] + "\"\n(Codice "+f["Numero Codice"]+")");
       return;
     }
     total_cal += energy;
